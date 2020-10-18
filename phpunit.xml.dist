@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" bootstrap="./vendor/autoload.php" colors="true">
+  <coverage includeUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+  </coverage>
+  <testsuites>
+    <testsuite name="psodox-inwc-client Test Suite">
+      <directory>./test/</directory>
+    </testsuite>
+  </testsuites>
+  <groups>
+    <exclude>
+      <group>disable</group>
+    </exclude>
+  </groups>
+  <php>
+    <ini name="date.timezone" value="UTC"/>
+    <const name="INWX_USER" value="dennybrandes"/>
+    <const name="INWX_PASSWORD" value="HhH4Cup5aq39p5K"/>
+  </php>
+</phpunit>

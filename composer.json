@@ -1,0 +1,19 @@
+{
+    "name": "psodox/inwx-client",
+    "description": "Object oriented client for INWX DomainRobot",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Psodox\\InwxClient\\": "src/"
+        }
+    },
+    "require": {
+        "inwx/domrobot": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "d.brandes",
+            "email": "d.brandes@pixel-pro.de"
+        }
+    ]
+}
