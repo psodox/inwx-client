@@ -9,6 +9,8 @@ class ContactListRequest implements RequestInterface
     private const OBJECT = 'contact';
     private const METHOD = 'list';
 
+    public array $parameters = [];
+
     public function getObject(): string
     {
         return self::OBJECT;
@@ -21,6 +23,6 @@ class ContactListRequest implements RequestInterface
 
     public function getParameters(): array
     {
-        return [];
+        return $this->parameters;
     }
 }
