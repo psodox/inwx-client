@@ -18,6 +18,6 @@ class Response
             throw new RequestException($inwxResponseData['msg'], $code);
         }
 
-        $this->data = $inwxResponseData['respData'];
+        $this->data = $inwxResponseData['resData'];
     }
 }
