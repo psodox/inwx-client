@@ -4,7 +4,7 @@ namespace Psodox\InwxClient;
 
 use INWX\Domrobot;
 use Psodox\InwxClient\Handler\ContactsHandler;
-use Psodox\InwxClient\Response\LoginResponse;
+use Psodox\InwxClient\Response\Response;
 
 class Client
 {
@@ -24,7 +24,7 @@ class Client
 
     private function login()
     {
-        new LoginResponse(
+        new Response(
             $this->domRobot->login(
                 $this->configuration->getUsername(),
                 $this->configuration->getPassword()
